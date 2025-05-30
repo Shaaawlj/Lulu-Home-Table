@@ -71,7 +71,12 @@ li{
     list-style: none;
     margin: 0 10px;
 }
-#redes>a{
+#redes i {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free", sans-serif !important;
+    color: white !important;
+    font-style: normal;
+}
+#redes>li{
     font-family: "Roboto", sans-serif;
     color: white;
     text-decoration: none;
@@ -79,4 +84,31 @@ li{
     font-weight: 100;
     margin: 0 40px;
 }
-
+@media (max-width: 600px) {
+    body {
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 22px;
+    }
+    main {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 10px;
+    }
+    ol {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    #menu a, #redes>li {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    #menu {
+        margin-bottom: 15px;
+    }
+}
