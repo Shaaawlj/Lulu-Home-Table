@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "kapakana regular";
+    src: url(../kapakana-v17-latin/kapakana-v17-latin-regular.woff2) format("woff2");
+}
+@font-face {
+    font-family: "kapakana 300";
+    src: url(../kapakana-v17-latin/kapakana-v17-latin-300.woff2) format("woff2");
+}
+header {
+    font-family: "kapakana 300", sans-serif;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 10px 0;
+}
+header>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+/* Para evitar que el contenido quede debajo de la cabecera */
+body {
+    padding-top: 200px; /* Ajusta según la altura de tu header */
+}
