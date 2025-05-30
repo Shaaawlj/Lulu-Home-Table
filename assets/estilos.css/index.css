@@ -82,33 +82,6 @@ li{
     text-decoration: none;
     font-size: 15px;
     font-weight: 100;
-    margin: 0 40px;
+    margin: 0 15px;
 }
-@media (max-width: 600px) {
-    body {
-        padding-top: 20px;
-    }
-    h2 {
-        font-size: 48px;
-    }
-    p {
-        font-size: 22px;
-    }
-    main {
-        height: auto;
-        min-height: 100vh;
-        padding: 20px 10px;
-    }
-    ol {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    #menu a, #redes>li {
-        font-size: 16px;
-        margin: 10px 0;
-    }
-    #menu {
-        margin-bottom: 15px;
-    }
-}
+
