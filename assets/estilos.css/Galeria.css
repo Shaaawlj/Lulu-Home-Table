@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "kapakana regular";
+    src: url(../kapakana-v17-latin/kapakana-v17-latin-regular.woff2) format("woff2");
+}
+@font-face {
+    font-family: "kapakana 300";
+    src: url(../kapakana-v17-latin/kapakana-v17-latin-300.woff2) format("woff2");
+}
+body{
+    background-color: #b0a444;
+    margin: 0;
+}
+/* Hacemos las imagenes mas pequeñas y tambien hacemos que esten en 2 filas y tres columnas */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px; /* Espacio entre las imágenes */
+    padding: 20px; /* Espacio alrededor de la galería */
+}
+/* Hacemos que las imagenes sean del mismo tamaño */
+.imagenes img {
+    width: 100%; /* Ocupa todo el ancho de la celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s ease-in; /* Transición suave al hacer hover */
+}
+.imagenes img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+    filter: brightness(0.5); /* Oscurece la imagen al hacer hover */
+    transition: transform 0.2s ease-in, filter 0.2s ease-in;
+}
+.item{
+    margin: 30px;
+    text-align: center; /* Centra el texto debajo de la imagen */
+    font-family: "kapakana 300", sans-serif; /* Fuente para el texto */
+    font-size: 60px;
+}
+.item>p{
+    margin-top: 10px;
+}
+#redes i {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free", sans-serif !important;
+    color: white !important;
+    font-style: normal;
+}
+#redes>li{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0 15px;
+}
+#redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;     
+}
+#redes>li{
+    list-style: none;
+    margin: 0 10px;
+}
