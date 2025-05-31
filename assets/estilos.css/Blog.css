@@ -80,3 +80,16 @@ main p{
     object-fit: cover;
     margin-left: 20px; /* Espacio entre el h2 y el logo */
 }
+footer>h2{
+    font-family: "kapakana 300", cursive !important;
+    font-size: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#blogfloat{
+    float: left;
+    max-width: 160px;
+}
