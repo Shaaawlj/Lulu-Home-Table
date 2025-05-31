@@ -93,3 +93,50 @@ footer{
     float: left;
     max-width: 160px;
 }
+@media (max-width: 768px) {
+    main h2 {
+        font-size: 40px;
+        padding: 0 10px;
+    }
+    main p {
+        font-size: 22px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .logo-titulo {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .logo-titulo h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    #imagenBlog {
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    #fondoblog {
+        margin-bottom: 20px;
+    }
+    #redes {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #redes>li {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+    #blogfloat {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100px;
+    }
+    footer>h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
