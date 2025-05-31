@@ -64,3 +64,14 @@ body{
     list-style: none;
     margin: 0 10px;
 }
+.galeria{
+    font-family: "kapakana 300", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.galeria>h2{
+    margin: 0;
+}
