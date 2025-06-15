@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(135deg, #fffbe6 40%, #e4c85b 100%);
+}
+
 #redes i {
     font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free", sans-serif !important;
     color: white !important;
@@ -20,4 +24,198 @@
 #redes>li{
     list-style: none;
     margin: 0 10px;
+}
+
+/* Grid principal para la sección de contacto */
+.contacto-area-grid {
+    display: grid;
+    grid-template-areas:
+        "info form"
+        "horario form";
+    grid-template-columns: 1.2fr 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 48px auto 0 auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(176,164,60,0.07);
+}
+
+.contacto-info {
+    grid-area: info;
+    background: #faf9f6;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 6px rgba(176,164,60,0.04);
+    border: 1.5px solid #e8e2c0;
+}
+.contacto-horario {
+    grid-area: horario;
+    background: #faf9f6;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 6px rgba(176,164,60,0.04);
+    border: 1.5px solid #e8e2c0;
+    margin-top: 0;
+}
+.contacto-form {
+    grid-area: form;
+    background: #fffbe6;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 8px rgba(176,164,60,0.07);
+    border: 1.5px solid #e8e2c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto-info h2,
+.contacto-horario h2,
+.contacto-form h2 {
+    color: #b0a43c;
+    font-family: "kapakana regular", serif;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contacto-info table,
+.contacto-horario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.contacto-info td,
+.contacto-horario td {
+    padding: 8px 6px;
+    vertical-align: top;
+    font-size: 16px;
+    border: 1px solid #e8e2c0;
+    background: #fff;
+    text-align: center;
+}
+
+.contacto-info a,
+.contacto-horario a {
+    color: #b0a43c;
+    text-decoration: underline dotted;
+    transition: color 0.2s;
+}
+.contacto-info a:hover,
+.contacto-horario a:hover {
+    color: #8c7c2f;
+    text-decoration: underline solid;
+}
+
+#contact-form label {
+    font-weight: 500;
+    margin-top: 12px;
+    display: block;
+    color: #7a6e2c;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1.5px solid #e8e2c0;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background: #fcfaf3;
+    transition: border 0.2s;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border: 1.5px solid #b0a43c;
+    outline: none;
+}
+#contact-form button {
+    background: #b0a43c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(176,164,60,0.10);
+    margin-top: 10px;
+}
+#contact-form button:hover {
+    background: #8c7c2f;
+}
+
+/* Mapa grande y responsivo */
+#mapa {
+    margin: 40px auto 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.mapa-iframe {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 400px;
+    height: 55vw;
+    max-height: 600px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(176,164,60,0.10), 0 1.5px 8px rgba(0,0,0,0.04);
+    margin-top: 18px;
+    background: #fff;
+    border: 2px solid #e8e2c0;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+@media (max-width: 1100px) {
+    .mapa-iframe {
+        max-width: 98vw;
+        height: 65vw;
+        min-height: 220px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .mapa-iframe {
+        height: 48vw;
+        min-height: 160px;
+        max-height: 300px;
+    }
+    #mapa {
+        padding: 0 2vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .contacto-area-grid {
+        grid-template-areas:
+            "info"
+            "horario"
+            "form";
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 12px 2vw;
+    }
+    .contacto-info,
+    .contacto-horario,
+    .contacto-form {
+        padding: 14px 6px;
+    }
+    .contacto-info h2,
+    .contacto-horario h2,
+    .contacto-form h2 {
+        font-size: 1.3rem;
+    }
 }
