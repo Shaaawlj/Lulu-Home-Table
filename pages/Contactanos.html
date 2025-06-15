@@ -26,67 +26,81 @@
     </header>
     <main>
         <section>
-            <div class="contacto-table">
-                <h2 id="letras-rojas">Información de contacto</h2>
-                <table>
-                    <tr>
-                        <td><i class="fa-solid fa-phone"></i> Teléfono:</td>
-                        <td>+51 981 679 275</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-envelope"></i> Correo:</td>
-                        <td>lulu.home.table@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-instagram"></i> Instagram:</td>
-                        <td><a href="https://www.instagram.com/_lulu.pe/" target="_blank" rel="noopener">@_lulu.pe</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-facebook"></i> Facebook:</td>
-                        <td><a href="https://www.facebook.com/people/Lul%C3%BA-HomeTable/100083394283474/" target="_blank" rel="noopener">Lulú Home&Table</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-tiktok"></i> TikTok:</td>
-                        <td><a href="https://www.tiktok.com/@luluhomeandtable" target="_blank" rel="noopener">@luluhomeandtable</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-whatsapp"></i> WhatsApp:</td>
-                        <td><a href="https://api.whatsapp.com/send/?phone=51981679275&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">+51 981 679 275</a></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="contacto-table-Horario">
-                <h2 id="letras-rojas">Horario de atención presencial</h2>
-                <table>
-                    <tr>
-                        <td><i class="fa-solid fa-clock"></i> Horario de atención:</td>
-                        <td>Lunes a Viernes: 9:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Sábados: 10:00 AM - 2:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Domingos: Cerrado</td>
-                    </tr>
-                </table>
+            <div class="contacto-grid">
+                <div>
+                    <div class="contacto-table">
+                        <h2 id="letras-rojas" tabindex="0">Información de contacto</h2>
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i> Teléfono:</td>
+                                <td>+51 981 679 275</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i> Correo:</td>
+                                <td>lulu.home.table@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-instagram"></i> Instagram:</td>
+                                <td><a href="https://www.instagram.com/_lulu.pe/" target="_blank" rel="noopener">@_lulu.pe</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-facebook"></i> Facebook:</td>
+                                <td><a href="https://www.facebook.com/people/Lul%C3%BA-HomeTable/100083394283474/" target="_blank" rel="noopener">Lulú Home&Table</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-tiktok"></i> TikTok:</td>
+                                <td><a href="https://www.tiktok.com/@luluhomeandtable" target="_blank" rel="noopener">@luluhomeandtable</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-whatsapp"></i> WhatsApp:</td>
+                                <td><a href="https://api.whatsapp.com/send/?phone=51981679275&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">+51 981 679 275</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="contacto-table-Horario">
+                        <h2 id="letras-rojas" tabindex="0">Horario de atención presencial</h2>
+                        <table>
+                            <tr>
+                                <td rowspan="3"><i class="fa-solid fa-clock"></i> Horario de atención:</td>
+                                <td>Lunes a Viernes: 9:00 AM - 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sábados: 10:00 AM - 2:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Domingos: Cerrado</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="contacto-formulario">
+                    <h2 tabindex="0">Envíanos un mensaje</h2>
+                    <form action="#" method="post" id="contact-form">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="mensaje-exito" style="display:none; color:#4caf50; margin-top:10px;">
+                        ¡Gracias por contactarnos! Te responderemos pronto.
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>Envíanos un mensaje</h2>
-            <form action="#" method="post" id="contact-form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br>
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-                <br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
+        <section id="mapa">
+            <h2 tabindex="0">Ubicación</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9999999999995!2d-73.5183449!3d25.1752245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sTri%C3%A1ngulo%20de%20las%20Bermudas!5e0!3m2!1ses!2spe!4v1710000000000!5m2!1ses!2spe"
+                class="mapa-iframe"
+                style="border:0;"
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Lulú Home & Table en Google Maps">
+            </iframe>
         </section>
     </main>
     <footer>
